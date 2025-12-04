@@ -1,3 +1,99 @@
+#BARLET {
+  width: 250px;
+  padding: 15px;
+  background: linear-gradient(135deg, #5c6bc0, #42a5f5);
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* Effet au survol */
+#BARLET:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+/* Image ronde avec effet de zoom */
+#BARLET img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid white;
+  transition: transform 0.3s ease;
+}
+
+#BARLET:hover img {
+  transform: scale(1.1);
+}
+
+/* Nom */
+#BARLET h2 {
+  margin-top: 12px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3em;
+  letter-spacing: 1px;
+#CAYRAC {
+  width: 220px;
+  /*height: 220px;*/
+  object-fit: cover;
+  border-radius: 20px;                    /* mets 50% pour un cercle */
+  border: 4px solid #ffffff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+  background: linear-gradient(135deg, #00c853, #aeea00); /* verts */
+  padding: 4px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#CAYRAC:hover {
+  transform: scale(1.03);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.45);
+}
+#BELROSE{
+     background: #eae8e8;
+    box-shadow: 0 0 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: black;
+
+}
+
+#BELROSE:hover {
+    background-color: #a3a2a2;
+}
+
+#BELROSE p {
+    text-align: center;
+    font-weight: bold;
+}
+
+
+#GUERIPEL {
+    background-color: blanchedalmond;
+    color: blue;
+}
+
+#GUERIPEL img {
+    transition: transform 0.6s ease;
+}
+
+#GUERIPEL img:hover {
+    transform: rotate(360deg);
+}
+
+/* Ajout du changement de couleur au survol */
+#GUERIPEL:hover {
+    background-color: lightblue; /* nouvelle couleur au survol */
+    color: red; /* texte change de couleur */
+}
+
+#MAREY_VAIRELLES {
+    background-color: gold;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
 
 /* ========== THOUVEREZ ========== */
@@ -65,13 +161,7 @@
 }
 
 /* ========== GUERIPEL ========== */
-#GUERIPEL {
-    background-color: brown;
-}
 
-#GUERIPEL p {
-    color: aquamarine;
-}
 
 /* ========== MAREY_VAIRELLES ========== */
 #MAREY_VAIRELLES {
@@ -85,14 +175,9 @@
     border-radius: 12px;
     background: linear-gradient(
             135deg,
-            #e40303, /* rouge */
-            #ff8c00, /* orange */
-            #ffed00, /* jaune */
-            #008026, /* vert */
-            #004dff, /* bleu */
-            #750787  /* violet */
-    );
-}
+            #e40303, /* rouge */ #ff8c00, /* orange */ #ffed00, /* jaune */ #008026, /* vert */ #004dff, /* bleu */ #750787 /* violet */
+    );}
+
 
 #DANGUIN img {
     border-radius: 10px;
@@ -195,12 +280,11 @@
 
 #GRUEL:hover p {
     color: #ff2d2d;
-    text-shadow:
-            0 0 5px #ff2d2d,
-            0 0 10px #ff2d2d,
-            0 0 15px #ff2d2d,
-            0 0 25px #ff4949,
-            0 0 40px #ff6060;
+    text-shadow: 0 0 5px #ff2d2d,
+    0 0 10px #ff2d2d,
+    0 0 15px #ff2d2d,
+    0 0 25px #ff4949,
+    0 0 40px #ff6060;
 }
 
 /* ========== MESPREUVE ========== */
@@ -228,3 +312,108 @@
     background-color: orange;
 }
 
+
+/* ========== ZABAWSKI ========== */
+#ZABAWSKI {
+    border: none;
+    padding: 10px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #000000, #ff8c00);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#ZABAWSKI img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#ZABAWSKI:hover {
+    transform: scale(1.07);
+    box-shadow: 0 8px 16px rgba(255, 140, 0, 0.5);
+}
+
+#MAREY_VAIRELLES {
+    background-color: gold;
+    border-radius: 25px;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 6px white;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.5s ease;
+}
+
+/* Effet arc-en-ciel au survol */
+#MAREY_VAIRELLES:hover {
+    background: linear-gradient(
+            90deg,
+            red,
+            orange,
+            yellow,
+            green,
+            cyan,
+            blue,
+            purple
+    );
+    color: white;
+}
+
+/* Bouton qui s’enfonce */
+#MAREY_VAIRELLES:active {
+    transform: scale(2);
+    box-shadow: 0 2px white;
+}
+
+#LUTAUD {
+    color: gold;
+    background-color: black;
+    color: gold;
+    background-color: black;
+    padding: 10px;
+    border: 3px solid gold;
+    border-radius: 10px;
+    box-shadow: 0 0 6px gold;
+}
+
+#LUTAUD img {
+    transition: transform 0.8s ease-in-out,
+    box-shadow 0.8s ease-in-out;
+}
+
+#LUTAUD:hover img {
+    transform: rotate(360deg);
+    box-shadow: 0 0 20px gold, 0 0 30px gold inset;
+}
+
+#MESPREUVE {
+    transition: transform 0.3s ease, border-color 0.3s ease, border-width 0.3s ease;
+    border: 2px solid #000;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('MESPREUVE/phot-css.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    color: white;
+
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#MESPREUVE a {
+    color: white !important;
+    text-decoration: none;
+}
+
+#MESPREUVE:hover {
+    transform: scale(1.1);
+
+    border-color: yellow;
+
+    border-width: 5px;
+
+    cursor: pointer;
+    z-index: 10;
+}
